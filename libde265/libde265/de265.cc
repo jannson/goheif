@@ -31,7 +31,12 @@
 #include <assert.h>
 #include <string.h>
 #include <stdlib.h>
+
+#ifdef MINGW32_STD
+#include "mingw.mutex.h"
+#else
 #include <mutex>
+#endif
 
 
 // TODO: should be in some vps.c related header
