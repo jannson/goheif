@@ -485,7 +485,7 @@ void put_qpel_fallback(int16_t *out, ptrdiff_t out_stride,
                        int xFracL, int yFracL, int bit_depth)
 {
   int extra_left   = fallback_extra_before[xFracL];
-  //int extra_right  = extra_after [xFracL];
+  //int extra_right  = fallback_extra_after [xFracL];
   int extra_top    = fallback_extra_before[yFracL];
   int extra_bottom = fallback_extra_after [yFracL];
 
